@@ -1273,14 +1273,14 @@ a {
 .timeline_divider {
     margin-top: 20px;
     position: relative;
-    /* background-image: url(../images/timeline.png); */
+    background-image: url(../images/timeline.png);
     display: block;
     justify-content: center;
     width: 80%;
     display: block;
     text-align: center;
     height: 5px;
-    background-image: url(../images/divider.png);
+    /* background-image: url(../images/divider.png); */
     background-size: 10%;
     background-position: center;
     background-repeat: no-repeat;
