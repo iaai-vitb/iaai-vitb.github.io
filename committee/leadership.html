@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IAAI Conference</title>
     <!-- ICONS -->
-    
     <link rel="icon" href="../images/favicon.ico" type="image/x-ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- CSS only -->
@@ -16,25 +15,58 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/demo.css">
     <link rel="stylesheet" href="../styles/footer.css">
-    
+    <link rel="stylesheet" href="styles/navbar.css">
 </head>
 
 <body>
     <header id="header" class="fixed-top header ">
         <div class="topnav container d-flex align-items-center justify-content-between">
             <a href="#" class="logo"><img src="../images/logo (1).png" alt="IAAI" class="img-fluid"></a>
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="../index.html#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#papers">Call for Papers</a></li>
-                    <li><a class="nav-link scrollto " href="#student-coordinator">Committees</a></li>
-                    <li><a class="nav-link scrollto" href="#speakers">Keynote Speakers</a></li>
-                    <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
-                    <li><a class="nav-link scrollto" href="#sponsors">Sponsors</a></li>
-                    <li><a class="nav-link scrollto" href="../assets/IAAI Conference Brochure.pdf">Brochure</a></li>
-                    <!-- <li><a class="nav-link scrollto" href="#register">Register</a></li> -->
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
+            <nav class="navbar navbar-expand-lg navbar-dark" style="overflow: visible;">
+                <div class="container-fluid" style="overflow: visible;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img src="images/logo (1).png" alt=""></a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="overflow: visible;">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="overflow: visible;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#about">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#iaai">About IAAI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#papers">Call for Papers</a>
+                            </li>
+                            <li class="nav-item dropdown" style="overflow: visible;">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Committees </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="/committee/leadership.html">Leadership</a></li>
+                                    <li><a class="dropdown-item" href="/committee/organizingComiteeAdvisor.html">Organizing Committee
+                                            Advisors</a></li>
+                                    <li><a class="dropdown-item" href="#">Organizing Committee </a></li>
+                                    <li><a class="dropdown-item" href="#">Local Organization Committee </a></li>
+                                </ul>
+                            </li>
+                            <li class=" nav-item ">
+                                <a class="nav-link " href="#speakers">Keynote Speakers</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#schedule">Schedule</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#sponsors" onclick={trigger()}>Sponsors</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="assets/IAAI Conference Brochure.pdf">Brochure</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#footer">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
