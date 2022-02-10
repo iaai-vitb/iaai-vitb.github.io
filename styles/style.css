@@ -203,8 +203,8 @@ body {
 */
 
 .mobile-nav-toggle {
-    color: #124265;
-    font-size: 28px;
+    color: white;
+    font-size: 29px;
     cursor: pointer;
     display: none;
     line-height: 0;
@@ -244,8 +244,8 @@ body {
 
 .navbar-mobile .mobile-nav-toggle {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
 }
 
 .navbar-mobile ul {
