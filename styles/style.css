@@ -733,7 +733,7 @@ img:nth-child(5) {
 }
 
 img:nth-child(6) {
-    animation-delay: 8s;
+    animation-delay: 10s;
 }
 
 .about-container {
@@ -1055,7 +1055,8 @@ a {
     background-size: cover;
 }
 
-.feature_container3:hover,
+
+/* .feature_container3:hover,
 .feature_container6:hover,
 .feature_container5:hover,
 .feature_container7:hover,
@@ -1072,10 +1073,10 @@ a {
 .feature_container15:hover,
 .feature_container16:hover {
     background-image: none;
-    color: #666666;
+    
     transition: 0.2s ease-out;
     background-color: blanchedalmond;
-}
+} */
 
 .feature_content i {
     font-size: 30px;
@@ -1096,6 +1097,7 @@ a {
 }
 
 .feature_title h2 {
+    color: white;
     text-align: center;
     font-size: 23px;
 }

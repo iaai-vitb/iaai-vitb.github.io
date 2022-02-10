@@ -8,12 +8,9 @@
     <title>IAAI Conference</title>
     <!-- ICONS -->
     <link rel="icon" href="../images/favicon.ico" type="image/x-ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/demo.css">
     <link rel="stylesheet" href="../styles/footer.css">
@@ -22,22 +19,52 @@
 
 <body>
     <header id="header" class="fixed-top header ">
-        <div class="topnav container d-flex align-items-center justify-content-between">
-            <a href="#" class="logo"><img src="../images/logo (1).png" alt="IAAI" class="img-fluid"></a>
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="../index.html#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#papers">Call for Papers</a></li>
-                    <li><a class="nav-link scrollto " href="#student-coordinator">Committees</a></li>
-                    <li><a class="nav-link scrollto" href="#speakers">Keynote Speakers</a></li>
-                    <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
-                    <li><a class="nav-link scrollto" href="#sponsors">Sponsors</a></li>
-                    <li><a class="nav-link scrollto" href="../assets/IAAI Conference Brochure.pdf">Brochure</a></li>
-                    <!-- <li><a class="nav-link scrollto" href="#register">Register</a></li> -->
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="overflow: visible;">
+            <div class="container-fluid" style="overflow: visible;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../images/logo (1).png" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="overflow: visible;">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="overflow: visible;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#iaai">About IAAI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#papers">Call for Papers</a>
+                        </li>
+                        <li class="nav-item dropdown" style="overflow: visible;">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Committees </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="/committee/leadership.html">Leadership</a></li>
+                                <li><a class="dropdown-item" href="/committee/organizingComiteeAdvisor.html">Organizing
+                                        Committee Advisors</a></li>
+                                <li><a class="dropdown-item" href="#">Organizing Committee </a></li>
+                                <li><a class="dropdown-item" href="#">Local Organization Committee </a></li>
+                            </ul>
+                        </li>
+                        <li class=" nav-item ">
+                            <a class="nav-link " href="#speakers">Keynote Speakers</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#sponsors" onclick={trigger()}>Sponsors</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="assets/IAAI Conference Brochure.pdf">Brochure</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#footer">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- <p>Scroll Up and Down this page to see the parallax scrolling effect.</p> -->
     <div class="parallax" style="background-image: url('../images/rohan/chemical-industry11.jpg');">
@@ -50,16 +77,10 @@
             <span class="line"></span>
         </div>
         <br><br>
-        <p>Artificial Intelligence is an emerging technology and currently experiencing a renaissance in the development
-            of the latest methods and practical applications for the ongoing methods in the Chemical Industry. AI has
-            the massive potential to reduce
-            energy consumption, various environmental burdens, and operational hazards of chemical production. The
-            conference aims to present a combination of aspects of Artificial Intelligence and Deep Learning methods for
-            the applications in Chemistry
-            and Chemical Engineering touching upon the important areas having high probabilities of development and
-            progress.</p>
-        <h3>Original & unpublished research papers are invited for presentation in the following areas, but not
-            restricted to.</h3>
+        <p>Artificial Intelligence is an emerging technology and currently experiencing a renaissance in the development of the latest methods and practical applications for the ongoing methods in the Chemical Industry. AI has the massive potential to reduce
+            energy consumption, various environmental burdens, and operational hazards of chemical production. The conference aims to present a combination of aspects of Artificial Intelligence and Deep Learning methods for the applications in Chemistry
+            and Chemical Engineering touching upon the important areas having high probabilities of development and progress.</p>
+        <h3>Original & unpublished research papers are invited for presentation in the following areas, but not restricted to.</h3>
         <ul class="list-group">
             <li class="list-group-item">Unit Operations and Processes</li>
             <li class="list-group-item">Chemical Plants</li>
@@ -81,10 +102,8 @@
             <div class="row gy-4 gx-5">
                 <div class="col-lg-4 col-md-6">
                     <h5 class="h1 text-white" style="overflow: hidden;">IAAI 2022</h5>
-                    <p class="small text-muted">First international conference on Industrial Applications of Artificial
-                        Intelligence towards industry 4.0</p>
-                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
-                            href="https://aiclub.aivit.tech/">aiclub.aivit.tech</a></p>
+                    <p class="small text-muted">First international conference on Industrial Applications of Artificial Intelligence towards industry 4.0</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="https://aiclub.aivit.tech/">aiclub.aivit.tech</a></p>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="text-white mb-3" style="overflow: hidden;">Contact Person</h5>

@@ -19,22 +19,52 @@
 
 <body>
     <header id="header" class="fixed-top header ">
-        <div class="topnav container d-flex align-items-center justify-content-between">
-            <a href="#" class="logo"><img src="../images/logo (1).png" alt="IAAI" class="img-fluid"></a>
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="../index.html#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#papers">Call for Papers</a></li>
-                    <li><a class="nav-link scrollto " href="#student-coordinator">Committees</a></li>
-                    <li><a class="nav-link scrollto" href="#speakers">Keynote Speakers</a></li>
-                    <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
-                    <li><a class="nav-link scrollto" href="#sponsors">Sponsors</a></li>
-                    <li><a class="nav-link scrollto" href="../assets/IAAI Conference Brochure.pdf">Brochure</a></li>
-                    <!-- <li><a class="nav-link scrollto" href="#register">Register</a></li> -->
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="overflow: visible;">
+            <div class="container-fluid" style="overflow: visible;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="../images/logo (1).png" alt=""></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="overflow: visible;">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="overflow: visible;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#iaai">About IAAI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#papers">Call for Papers</a>
+                        </li>
+                        <li class="nav-item dropdown" style="overflow: visible;">
+                            <a class="nav-link " href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Committees </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="/committee/leadership.html">Leadership</a></li>
+                                <li><a class="dropdown-item" href="/committee/organizingComiteeAdvisor.html">Organizing
+                                        Committee Advisors</a></li>
+                                <li><a class="dropdown-item" href="#">Organizing Committee </a></li>
+                                <li><a class="dropdown-item" href="#">Local Organization Committee </a></li>
+                            </ul>
+                        </li>
+                        <li class=" nav-item ">
+                            <a class="nav-link " href="#speakers">Keynote Speakers</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#sponsors" onclick={trigger()}>Sponsors</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="assets/IAAI Conference Brochure.pdf">Brochure</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#footer">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <!-- <p>Scroll Up and Down this page to see the parallax scrolling effect.</p> -->
     <div class="parallax" style="background-image: url('../images/rohan/aerospace11.jpg');">
@@ -67,60 +97,60 @@
             <li>Placeholder</li>
         </ul> -->
     </div>
-<!-- FOOTER -->
-<footer class="w-100 py-4 flex-shrink-0">
-    <div class="container py-4">
-        <div class="row gy-4 gx-5">
-            <div class="col-lg-4 col-md-6">
-                <h5 class="h1 text-white" style="overflow: hidden;">IAAI 2022</h5>
-                <p class="small text-muted">First international conference on Industrial Applications of Artificial Intelligence towards industry 4.0</p>
-                <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="https://aiclub.aivit.tech/">aiclub.aivit.tech</a></p>
-            </div>
-            <div class="col-lg-2 col-md-6">
-                <h5 class="text-white mb-3" style="overflow: hidden;">Contact Person</h5>
-                <ul class="list-unstyled text-muted">
-                    <li><a href="#">Dr. AVR Mayuri</a></li>
-                    <li><a href="#">Programme Chair Int MTech</a></li>
-                    <li><a href="#">AI Division, SCSE</a></li>
-                    <li><a href="#">VIT Bhopal University</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-3" style="overflow: hidden;">Contact Details</h5>
-                <ul class="list-unstyled text-muted">
-                    <li>
-                        <a href="#"> <i class="fa-solid fa-phone"></i> : +91 944 143 8843</a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="fa-solid fa-phone"> </i> : +91 830 994 0742</a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="fa-solid fa-envelope"></i> : mayuri.avr@vitbhopal.ac.in</a>
-                    </li>
-                    <li>
-                        <a href="#"> <i class="fa-solid fa-envelope"></i> : iaai2k22@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-white mb-3" style="overflow: hidden;">Social Media</h5>
-                <p class="small text-muted"></p>
-                <br>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/aiclub.vitb/"><i
-                            class=" social-link fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/aiclub-vitb/mycompany/"><i
-                            class=" social-link fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.youtube.com/channel/UCCNc8V7r8kkb0ReTnFR7Qqg"><i
-                            class=" social-link fa-brands fa-youtube"></i></a>
-                    <a href="https://twitter.com/vitbhopal?lang=en"><i
-                            class=" social-link fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class=" social-link fa-brands fa-facebook"></i></a>
+    <!-- FOOTER -->
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white" style="overflow: hidden;">IAAI 2022</h5>
+                    <p class="small text-muted">First international conference on Industrial Applications of Artificial Intelligence towards industry 4.0</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="https://aiclub.aivit.tech/">aiclub.aivit.tech</a></p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3" style="overflow: hidden;">Contact Person</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Dr. AVR Mayuri</a></li>
+                        <li><a href="#">Programme Chair Int MTech</a></li>
+                        <li><a href="#">AI Division, SCSE</a></li>
+                        <li><a href="#">VIT Bhopal University</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-3" style="overflow: hidden;">Contact Details</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"></i> : +91 944 143 8843</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-phone"> </i> : +91 830 994 0742</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-envelope"></i> : mayuri.avr@vitbhopal.ac.in</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa-solid fa-envelope"></i> : iaai2k22@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-3" style="overflow: hidden;">Social Media</h5>
+                    <p class="small text-muted"></p>
+                    <br>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/aiclub.vitb/"><i
+                                class=" social-link fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/aiclub-vitb/mycompany/"><i
+                                class=" social-link fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCCNc8V7r8kkb0ReTnFR7Qqg"><i
+                                class=" social-link fa-brands fa-youtube"></i></a>
+                        <a href="https://twitter.com/vitbhopal?lang=en"><i
+                                class=" social-link fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class=" social-link fa-brands fa-facebook"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </body>
 
 </html>
