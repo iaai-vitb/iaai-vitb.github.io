@@ -396,7 +396,7 @@ h4 {
 }
 
 .hero-info {
-    margin-top: 4%;
+    margin-top: 1.5%;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -426,7 +426,7 @@ h4 {
 
 #demo {
     font-size: 3em;
-    font-weight: 700;
+    font-weight: 400;
     /* color: #fff; */
     color: #48ff00;
 }
@@ -444,16 +444,16 @@ h4 {
         padding-right: 5px;
     }
     .hero-heading h4 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .hero-heading h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .hero-info {
-        margin-top: 15%;
+        margin-top: 5%;
     }
     .hero-img img {
-        width: 50%;
+        width: 40%;
     }
     .margin-top {
         margin-top: 10px !important;
@@ -470,7 +470,7 @@ h4 {
     }
     #demo {
         font-size: 2em;
-        font-weight: 700;
+        font-weight: 500;
         /* color: #fff; */
         color: #48ff00;
     }
@@ -1258,7 +1258,7 @@ a {
     margin-top: 50px;
 }
 
-#timeline h1 {
+.timeline_header {
     overflow: hidden;
     text-align: center;
     text-transform: uppercase;
@@ -1286,6 +1286,10 @@ a {
     opacity: .6;
 }
 
+.mar {
+    margin-top: 0rem;
+}
+
 @media (min-width:768px) {
     .timeline-steps .timeline-step:not(:last-child):after {
         content: "";
@@ -1305,14 +1309,17 @@ a {
         right: 7.5rem;
         top: .3125rem
     }
+    .mar {
+        margin-top: 0rem;
+    }
 }
 
 .timeline-steps .timeline-content {
-    width: 11rem;
+    width: 10rem;
     text-align: center
 }
 
-.timeline_info {
+.timeline-steps .timeline-content .timeline_content {
     text-align: center;
 }
 
