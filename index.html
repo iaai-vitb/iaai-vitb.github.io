@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAAI Conference</title>
+    <!-- ICONS -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <script>
+        function trigger() {
+            alert('Registration will start soon');
+        }
+    </script>
+    <header id="header" class="fixed-top header ">
+        <div class="topnav container d-flex align-items-center justify-content-between">
+            <a href="#" class="logo"><img src="images/logo (1).png" alt="IAAI" class="img-fluid"></a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#papers">Call for Papers</a></li>
+                    <li><a class="nav-link scrollto " href="#student-coordinator">Committees</a></li>
+                    <li><a class="nav-link scrollto" href="#speakers">Keynote Speakers</a></li>
+                    <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+                    <li><a class="nav-link scrollto" href="#sponsors">Sponsors</a></li>
+                    <li><a class="nav-link scrollto" href="assets/IAAI Conference Brochure.pdf">Brochure</a></li>
+                    <!-- <li><a class="nav-link scrollto" href="#register">Register</a></li> -->
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+            <script>
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() >= 50) {
+                        $('#header').css('background', 'transparent');
+                    } else {
+                        $('#header').css('background', '#090C2B');
+                    }
+                });
+            </script>
+        </div>
+    </header>
+    <div class="hero">
+        <!-- <div class="hero_img-wrapper  row justify-content-center align-items-center ">
+            <div class="col-lg-4 hero-img">
+                <img class="img-fluid" src="https://aivit.tech/img/logow.png" alt="">
+            </div>
+            <div class="col-lg-4 hero-img">
+                <img class="img-fluid" src="images/logo.png" alt="">
+            </div>
+            <div class="col-lg-4 hero-img">
+                <img class="img-fluid" src="https://aivit.tech/img/aiml.png" alt="">
+            </div>
+        </div> -->
+        <div class="hero-heading ">
+            <div class="seperator">
+                <span class="sep_holder" style="display: none;">
+                    <span class="sep_line"></span>
+                </span>
+                <!-- <h4>21<sup>st</sup> April - 23<sup>rd</sup> April 2022</h4> -->
+                <h4 class="text-red">First International Conference on</h4>
+                <span class="sep_holder">
+                    <span class="sep_line"></span>
+                </span>
+            </div>
+            <h1 class="text-white">Industrial Applications of Artificial Intelligence</h1>
+            <div class="seperator">
+                <span class="sep_holder">
+                    <span class="sep_line"></span>
+                </span>
+                <h4 class="text-red">Towards Industry 4.0</h4>
+                <!-- <span class="sep_holder">
+                    <span class="sep_line" style="display: none;"></span>
+                </span> -->
+            </div>
+            <div class="hero-info">
+                <h4 class="text-white"><i class="fa fa-calendar"> </i> : 21<sup>st</sup> April - 23 <sup>rd</sup> April 2022 </h4>
+                <h4 class="text-white"><i class="fa fa-map-marker"> </i> : Virtual Mode</h4>
+                <!-- <div style="margin-top: 2rem;" class="d-flex align-items-center justify-content-center" style="width: 100%;">
+                    <button type="button" class="glow-on-hover">Register Now</button>
+                </div> -->
+            </div>
+        </div>
+        <div class="row timer_div align-items-center justify-content-center">
+            <div class="col-lg-3 hero-img">
+                <a href="https://vitbhopal.ac.in/" class="logo">
+                    <img class="img-fluid" src="https://aivit.tech/img/logow.png" alt="VIT Bhopal"></a>
+            </div>
+            <div class="col-lg-6 timer_div-col">
+                <h4 class="text-green ">Conference begins in</h4>
+                <span id="demo"></span>
+            </div>
+            <!-- <div class="col-md-6 timer_div-col "> -->
+            <!-- <div class="row"> -->
+            <div class="col-lg-3 hero-img">
+                <img class="img-fluid" src="https://aivit.tech/img/aiml.png" alt="">
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
+    <div id="about" class="about">
+        <br><br><br><br><br>
+        <div class="line_head">
+            <span class="line"></span>
+            <h1>ABOUT US</h1>
+            <span class="line"></span>
+        </div>
+        <br>
+        <div class="row about-container">
+            <div class="col-lg-6 ">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'vit')" id="defaultOpen">VIT Bhopal</button>
+                    <button class="tablinks" onclick="openCity(event, 'scse')">SCSE</button>
+                    <button class="tablinks" onclick="openCity(event, 'Division')">AI Division</button>
+                    <button class="tablinks" onclick="openCity(event, 'Club')">AI Club</button>
+                </div>
+                <!-- Tab content -->
+                <div id="vit" class="tabcontent">
+                    <div style="height: 100px;"></div>
+                    <h3>VIT Bhopal</h3>
+                    <p>VIT Bhopal University, envisioned with a new global outlook will empower its aspirants to attain excellence through learning. Starting from the 2017-18 academic year, the new ultra- modern University campus, sprawling over 300 acres,
+                        is in the town of Kothrikalan, surrounded by green, lush fields and a serene environment. This new and contemporary campus is aiming to become the primary hub of education, with leading edge and high-tech developments in a wide
+                        variety of areas. Collaboration with reputed national and international organizations and strategic partnerships with universities around the world are being established, to prepare a globally competent generation of professionals.</p>
+                </div>
+                <div id="scse" class="tabcontent">
+                    <div style="height: 100px;"></div>
+                    <h3>SCSE</h3>
+                    <p>The School of Computing Science & Engineering institutes awareness in wide-ranging programmes such as Artificial Intelligence and Machine Learning, Cyber Security and Digital Forensics, Computational and Data Sciences, Gaming Technology
+                        and Health Informatics.</p>
+                </div>
+                <div id="Division" class="tabcontent">
+                    <div style="height: 100px;"></div>
+                    <h3>AI Division</h3>
+                    <p>The fields of Artificial Intelligence and Machine Learning are two domains that are playing a significant role in the fast-changing world of advanced technologies. The latest trends in AI & ML are aiding different business sectors
+                        and even professionals in reimagining the viability of varied possibilities in data predictions, analysis and optimization of possible potential scenarios and successfully tackling the given tasks.</p>
+                </div>
+                <div id="Club" class="tabcontent">
+                    <div style="height: 100px;"></div>
+                    <h3>AI Club</h3>
+                    <p>AI Club is one of the few clubs of VIT Bhopal which successfully hosted numerous national as well as international events such as AI Conclave. As we know, AI goes hand in hand with automation, thus one of our Aim is to create systems
+                        adaptive through the use of Artificial Intelligence. We organize events such as debates, webinars, competitions, to showcase the skills of our members as well as learn alongside them and improve our analyzing skills and maybe even
+                        develop some new skills along the way, the possibilities are endless. The main goal of AI Club is to provide students with Industry level experience, which would help them in their future. Every member is provided equal opportunities
+                        as well as a platform to sharpen and showcase their talents.</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <br><br>
+                <div class="pic-ctn ">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/img_8.png" class="img-fluid pic rounded" alt="">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/about_img-1.jpeg" class="img-fluid pic rounded " salt="">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/img_8.png" class="img-fluid pic rounded" alt="">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/img_4.png" class="img-fluid pic rounded" alt="">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/img-2.jpg" class="img-fluid pic rounded" alt="">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/img_2.png" class="img-fluid pic rounded" alt="">
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row ">
+            <div class="col-lg-6">
+                <section class="stage">
+                    <figure class="ball"><span class="shadow"></span></figure>
+                </section>
+                <div class="about_conf_img-top">
+                    <img class="img-fluid" src="images/aboutconf.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="about_conf-contents">
+                    <h3 class="text-red">Welcome to IAAI</h3>
+                    <h2 style="color: #081345;">Industrial Applications of Artificial Intelligence</h2>
+                    <span class="divider"></span>
+                    <p> IAAI is an international conference being conducted for 3 days, from the 21st to the 23rd of April, 2022. It involves the industrial applications of AI and focuses on the same in Sensing, Automation, Process Control, Production, and
+                        Quality Assurance towards Industry 4.0. </p>
+                    <p> The motto of the conference is to impart knowledge about the various ways in which AI is bringing about an industrial revolution, called Industry 4.0. The panel of speakers includes experts from India and abroad, faculties, researchers,
+                        industry personnel, Academia and R&D scholars, and students. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="papers" class="about">
+        <br><br><br><br><br>
+        <div class="line_head">
+            <span class="line"></span>
+            <h1>CALL FOR PAPERS</h1>
+            <span class="line"></span>
+        </div>
+    </div>
+    <section id="industries" class="features mt-5" data-aos="fade-up" data-aos-delay="100">
+        <div class="features_container container mb-5">
+            <div class="row">
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container1" href="./images/rohan/additive-manufacturing11.jpg">
+                        <div class="feature_title">
+                            <h2>Additive Manufacturing</h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container2" href="industries/corrosion.html">
+                        <div class="feature_title">
+                            <h2>Aerospace </h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container3" href="industries/product-design.html">
+                        <div class="feature_title">
+                            <h2> Chemical Industry</h2>
+                            <div class="feature_title-bottom">
+                            </div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container4" href="industries/product-design.html">
+                        <div class="feature_title">
+                            <h2> Corrosion Management</h2>
+                            <div class="feature_title-bottom">
+                            </div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container5" href="industries/oil-and-gas.html">
+                        <div class="feature_title">
+                            <h2>Defence</h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container6" href="industries/chemical-industry.html">
+                        <div class="feature_title">
+                            <h2>Education 4.0</h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container7" href="industries/steel-industry.html">
+                        <div class="feature_title">
+                            <h2>Health Care</h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container8" href="industries/aerospace.html">
+                        <div class="feature_title">
+                            <h2>Material Science</h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container9" href="industries/smart-and-nano.html">
+                        <div class="feature_title">
+                            <h2>Oil & Gas </h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container10" href="industries/water-and-soil.html">
+                        <div class="feature_title">
+                            <h2>Product Design</h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container11" href="industries/healthcare.html">
+                        <div class="feature_title">
+                            <h2>Quality Assurance </h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container12" href="industries/remote-sensing.html">
+                        <div class="feature_title">
+                            <h2>Remote Sensing</h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container13" href="industries/quality-assuarance.html">
+                        <div class="feature_title">
+                            <h2> Robotics </h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container14" href="industries/robotics.html">
+                        <div class="feature_title">
+                            <h2>Smart & Nano Materials</h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container15" href="industries/education.html">
+                        <div class="feature_title">
+                            <h2> Steel</h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class=" col-md-6 col-lg-3">
+                    <a class="feature_container16" href="industries/education.html">
+                        <div class="feature_title">
+                            <h2> Water & Soil</h2>
+                            <div class="feature_title-bottom"></div>
+                        </div>
+                        <div class="feature_content">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section id="timeline">
+            <div>
+                <div class="row text-center justify-content-center  mb-5">
+                    <div class="col-xl-6 col-lg-8 col-sm-6 d-flex justify-content-center ">
+                        <h1 class="font-weight-bold">Important Dates</h1>
+                        <!-- <p style="text-align: center; text-transform: uppercase; font-size: 15px;">Will be out soon</p> -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                                    <div class="inner-circle"></div>
+                                    <p class="h5 mt-3 mb-1">15th March 2022</p>
+                                    <p class="h7 mb-0 mb-lg-0">Abstract Submission Deadline</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
+                                    <div class="inner-circle"></div>
+                                    <p class="h5 mt-3 mb-1"> 25th March 2022</p>
+                                    <p class=" timeline_info h7 mb-0 mb-lg-0">Acceptance Notification</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                                    <div class="inner-circle"></div>
+                                    <p class="h5 mt-3 mb-1"> 15th April 2022</p>
+                                    <p class="h7 mb-0 mb-lg-0">Full Paper Submission</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
+                                    <div class="inner-circle"></div>
+                                    <p class="h5 mt-3 mb-1">15th April 2022</p>
+                                    <p class="h7 mb-0 mb-lg-0">Last Date for Registration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="rules">
+            <div class="container rules_wrapper">
+                <div class="rules_content">
+                    <div class="row d-flex justify-content-center  mb-100">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h1 class="font-weight-bold">RULES</h1>
+                                </div>
+                                <ul class="list-style-none">
+                                    <li class="d-flex no-block card-body"> <i class="fa fa-check-circle w-30px m-t-5"></i>
+                                        <div> <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Version 2.5
+                                                released</a> <span class="text-muted">A new version 2.5 has been
+                                                released. </span> </div>
+                                    </li>
+                                    <li class="d-flex no-block card-body border-top"> <i class="fa fa-gift w-30px m-t-5"></i>
+                                        <div> <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Congratulation
+                                                to AAA For new investment</a> <span class="text-muted">AAA has invested
+                                                $2M in MMM. we are happy to working forward with AAA.</span> </div>
+                                    </li>
+                                    <li class="d-flex no-block card-body border-top"> <i class="fa fa-plus w-30px m-t-5"></i>
+                                        <div> <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Hiring Android
+                                                Developers</a> <span class="text-muted">We are hiring android developers
+                                                to expend our mobile development team.</span> </div>
+                                    </li>
+                                    <li class="d-flex no-block card-body border-top"> <i class="fa fa-leaf w-30px m-t-5"></i>
+                                        <div> <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Anounced New
+                                                CEO</a> <span class="text-muted">We announced John kendey as new CEO of
+                                                the company.</span> </div>
+                                    </li>
+                                    <li class="d-flex no-block card-body border-top"> <i class="fa fa-question-circle w-30px m-t-5"></i>
+                                        <div> <a href="#" class="m-b-0 font-medium p-0" data-abc="true">New Guidelines
+                                                to Employees</a> <span class="text-muted">We have realeased new
+                                                guidelines to all employees</span> </div>
+                                    </li>
+                                    <li class="d-flex no-block card-body border-top"> <i class="fa fa-plus w-30px m-t-5"></i>
+                                        <div> <a href="#" class="m-b-0 font-medium p-0" data-abc="true">Android App
+                                                version 5.1 released</a> <span class="text-muted">We have realeased
+                                                android app version 5.1. update now.</span> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    </section>
+    <div id="speakers" class="about">
+        <br><br><br><br><br>
+        <div class="line_head">
+            <span class="line"></span>
+            <h1>KEYNOTE SPEAKERS</h1>
+            <span class="line"></span>
+            <div class="container-fluid mt-4" style="background-color: #E8E6E6 ">
+                <div class="  row  d-flex text-center  justify-content-center align-items-center">
+                    <div class="  animated_text">
+                        <h1><span class="animated_text-content">"Will Be Announced Soon"</span></h1>
+                    </div>
+                    <div class=" col-lg-4 speaker_card mt-4" style="filter: blur(8px);">
+                        <h2>Name of the speaker </h1>
+                            <h3>Designation of the speaker</h3>
+                            <br>
+                            <h5>Social Icons</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="schedule" class="about">
+        <br><br><br><br><br>
+        <div class="line_head">
+            <span class="line"></span>
+            <h1>SCHEDULE</h1>
+            <span class="line"></span>
+            <div class="container-fluid mt-4 " style="background-color: #E8E6E6 ">
+                <div class="row text-center justify-content-center align-items-center" style="height: 200px;">
+                    <div class="  animated_text">
+                        <h1><span class="animated_text-content">"Will Be Announced Soon"</span></h1>
+                    </div>
+                    <div class="col-lg-4" style="filter: blur(8px);">
+                        <h2>DATE</h2>
+                    </div>
+                    <div class="col-lg-4" style="filter: blur(8px);">
+                        <h2>DATE</h2>
+                    </div>
+                    <div class="col-lg-4" style="filter: blur(8px);">
+                        <h2>DATE</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="sponsors" class="about">
+        <br><br><br><br><br>
+        <div class="line_head">
+            <span class="line"></span>
+            <h1>SPONSORS</h1>
+            <span class="line"></span>
+        </div>
+    </div> -->
+    <!-- <div id="register" class="about">
+        <br><br><br><br><br>
+        <div class="line_head">
+            <span class="line"></span>
+            <h1>REGISTRATION</h1>
+            <span class="line"></span>
+        </div>
+    </div> -->
+    <div style="height: 100px;"></div>
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Company<span>logo</span></h3>
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">Pricing</a>
+                <a href="#">About</a>
+                <a href="#">Faq</a>
+                <a href="#">Contact</a>
+            </p>
+            <p class="footer-company-name">Company Name © 2015</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker" style="overflow: hidden;"></i>
+                <p><span>VIT Bhopal University<span> Bhopal-Indore Highway <span>Kothrikalan, Sehore </span>Madhya Pradesh – 466114 </p>
+            </div>
+            <div>
+                <i class="fa fa-phone" style="overflow: hidden;"></i>
+                <p>+91 9441438843<span>+91-8309940742</span></p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:mayuri.avr@vitbhopal.ac.in">mayuri.avr@vitbhopal.ac.in</a><span><a
+                            href="mailto:iaai2k22@gmail.com">iaai2k22@gmail.com</a></span></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet. </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/tabs.js"></script>
+    <script src="dist/script.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
