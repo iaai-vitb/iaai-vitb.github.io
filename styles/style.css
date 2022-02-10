@@ -206,7 +206,7 @@ body {
     color: white;
     font-size: 29px;
     cursor: pointer;
-    display: none;
+    display: block;
     line-height: 0;
     transition: 0.5s;
 }
