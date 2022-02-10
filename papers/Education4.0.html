@@ -17,45 +17,52 @@
 </head>
 
 <body>
+    <script>
+        function trigger() {
+            alert('Announcing Soon!');
+        }
+    </script>
     <header id="header" class="fixed-top header ">
         <nav class="navbar navbar-expand-lg navbar-dark" style="overflow: visible;">
             <div class="container-fluid" style="overflow: visible;">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="../images/logo (1).png" alt=""></a>
+                <a class="navbar-brand" href="../index.html"><img src="../images/logo (1).png" alt=""></a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03" style="overflow: visible;">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="overflow: visible;">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#about">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html#about">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#iaai">About IAAI</a>
+                            <a class="nav-link" href="../index.html#iaai">About IAAI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#papers">Call for Papers</a>
+                            <a class="nav-link" href="../index.html#papers">Call for Papers</a>
                         </li>
                         <li class="nav-item dropdown" style="overflow: visible;">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Committees </a>
+                            <a class="nav-link " href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Committees </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="/committee/leadership.html">Leadership</a></li>
-                                <li><a class="dropdown-item" href="/committee/organizingComiteeAdvisor.html">Organizing
-                                        Committee Advisors</a></li>
-                                <li><a class="dropdown-item" href="#">Organizing Committee </a></li>
-                                <li><a class="dropdown-item" href="#">Local Organization Committee </a></li>
+                                <li><a class="dropdown-item" href="../committee/leadership.html">Leadership</a></li>
+                                <li><a class="dropdown-item" href="../committee/organizingComiteeAdvisor.html">Organizing Committee
+                                        Advisors</a></li>
+                                <li><a class="dropdown-item" href="../committee/OrganizingCommittee.html">Organizing
+                                        Committee </a></li>
+                                <li><a class="dropdown-item" href="../committee/LocalOrganizingCommittee.html">Local
+                                        Organization Committee </a></li>
                             </ul>
                         </li>
                         <li class=" nav-item ">
-                            <a class="nav-link " href="#speakers">Keynote Speakers</a>
+                            <a class="nav-link " href="../index.html#speakers">Keynote Speakers</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="#schedule">Schedule</a>
+                            <a class="nav-link " href="../index.html#schedule">Schedule</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link " href="#sponsors" onclick={trigger()}>Sponsors</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="assets/IAAI Conference Brochure.pdf">Brochure</a>
+                            <a class="nav-link " href="../assets/IAAI Conference Brochure.pdf">Brochure</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link " href="#footer">Contact Us</a>
@@ -148,6 +155,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js " integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js " integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 " crossorigin="anonymous ">
+    </script>
 </body>
 
 </html>
