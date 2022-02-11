@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* color: rgb(34, 33, 33); */
+    transition: all ease-in-out 0.3s;
+}
+
+.content-patron {
+    display: block;
+    text-align: center;
+}
+
+.line_head {
+    padding-top: 20px;
+}
+
+.Chief-Patron{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+}
+
+.content-patron h1 {
+    margin: 50px auto 0;
+    padding: 4px 6px 4px 4px;
+    width: fit-content;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid rgb(34, 33, 33);
+}
+
+.content-patron h3 {
+    padding: 0;
+    margin-top: 1em;
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+}
+
+.Card p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+span {
+    color: rgb(212, 85, 127);
+}
+
+section {
+    display: grid;
+    justify-content: center;
+    margin: 0 4em;
+}
+
+.Patron {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Card {
+    padding: 20px;
+    margin: 70px auto;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        margin: 0 2em;
+    }
+}
+
+.Chief-Patron .Card>img {
+    width: 24rem;
+}
+
+.Card>img {
+    width: 16rem;
+    border-radius: 100%;
+}
+
+.Card:hover h3 {
+    color: rgb(212, 85, 127);
+}
+
+.Card:hover img {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:550px) {
+    .Chief-Patron .Card>img {
+        width: 16rem;
+    }
+}
