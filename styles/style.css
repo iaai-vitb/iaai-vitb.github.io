@@ -1423,16 +1423,8 @@ a {
     margin-bottom: 10px
 }
 
-ul.list-style-none li {
-    list-style: none
-}
 
-ul.list-style-none li a {
-    color: #673AB7;
-    padding: 8px 0px;
-    display: block;
-    text-decoration: none
-}
+
 
 .m-t-5 {
     margin-top: 5px
@@ -1449,4 +1441,36 @@ ul.list-style-none li a {
     color: #f72b2b;
     font-size: 30px;
     font-weight: 500;
+}
+.rules{
+    margin-bottom: 100px;
+}
+
+.download_button{
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 50px;
+    margin-top: 2rem;
+    border: 0;
+    padding: 20px 80px;
+    transition: all .2s ease-in-out;
+    background: rgb(247,43,43);
+background: linear-gradient(346deg, rgba(247,43,43,1) 46%, rgba(0,0,0,1) 46%);
+box-shadow: 0 8px 8px -4px 
+}
+
+.download_button svg{
+    font-size: 40px;
+}
+.download_button:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:600px){
+    .rules h1{
+        font-size: 25px;
+    }
+    .download_button{
+        padding: 15px 60px;
+    }
 }
