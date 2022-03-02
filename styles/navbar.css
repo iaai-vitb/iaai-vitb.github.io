@@ -30,6 +30,10 @@
     color: #ec0086 !important;
 }
 
+button.navbar-toggler{
+    border: 0;
+}
+
 @media screen and (max-width: 768px) {
     #header {
         padding-left: 2%;
