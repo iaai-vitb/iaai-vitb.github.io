@@ -372,6 +372,8 @@ body {
     margin-right: 5%;
 }
 
+
+
 .hero-heading h1,
 h4 {
     /* margin: 5vh; */
@@ -421,18 +423,39 @@ h4 {
     bottom: 0;
 }
 
+
+
 .timer_div-col {
     padding: 20px;
 }
 
+.division-logo img{
+     width: 90%;
+    height: 80px;
+}
+
+.springer-logo img{
+    height: 60px;
+}
+.vit-logo img{
+    height: 70px;
+    width: 100%;
+}
+
+
+
+#countdown ul{
+    padding-left: 0;
+}
+
 .countdown_li {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 0.7em;
     list-style-type: none;
     padding: 0.7em;
-    width: 6em;
+    width: 6.5em;
     text-transform: uppercase;
-    font-size: 1em;
+  
     font-weight: 400;
     /* color: #fff; */
     color: #000;
@@ -444,7 +467,18 @@ h4 {
     font-size: 2rem;
 }
 
+
 @media (max-width: 768px) {
+
+    .springer-logo img{
+        height: 25px;
+    }
+    .vit-logo img{
+        height: 60%;
+        width: 210px;
+    }
+    
+
     .hero {
         padding-top: 24%;
     }
@@ -469,11 +503,20 @@ h4 {
         width: 40%;
     }
     .margin-top {
-        margin-top: 10px !important;
+        margin-top: 15px !important;
     }
+    .ai-img img{
+        width: 30%;
+    }
+    .division-logo img{
+        width: 60%;
+       height: 60px;
+   }
     .timer_div {
+        padding: 20px 0;
+        margin-top: 2rem;
         width: 103vw;
-        position: absolute;
+        position: relative;
         text-align: center;
         background-color: #00000098;
         bottom: 0;
