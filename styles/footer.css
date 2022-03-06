@@ -27,3 +27,22 @@ footer {
     font-size: 30px;
     color: white;
 }
+
+.visitor{
+    margin-left: 5px;
+    color: white;
+    font-size: 1.2rem;
+
+}
+.visitor a{
+    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    background-color: transparent;
+}
+.visitor a img{
+    width: 50px;
+    margin-bottom: 3px;
+    font-size: 1.5rem;
+    background-color: transparent;
+}
