@@ -1,0 +1,49 @@
+.sp1{
+  min-height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.sponsor-content p{
+
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-left: 0.9rem;
+    line-height: 1.5;
+    width: 48ch;
+    text-align: justify;
+
+   
+}
+.sponsor img{
+    height: 3rem;
+}
+.sponsor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.sponsor-content{
+    width: 50%;
+    display: flex;
+   align-items: center;
+}
+
+@media (max-width:990px){
+    .sponsor img{
+        margin-bottom: 1rem;
+        height: 2rem;
+    }
+    .sponsor{
+        flex-direction: column;
+    }
+    svg {
+        width: 100px;
+    }
+    .sponsor-conten{
+        width: 60%;
+    }
+}
