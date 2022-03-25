@@ -1,9 +1,9 @@
 .sp1{
-  min-height: 50vh;
+  min-height: 45vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+   
 }
 .sponsor-content p{
 
@@ -12,7 +12,7 @@
     font-size: 1.1rem;
     margin-left: 0.9rem;
     line-height: 1.5;
-    width: 48ch;
+    letter-spacing: 1.5px;
     text-align: justify;
 
    
@@ -27,7 +27,7 @@
 
 }
 .sponsor-content{
-    width: 50%;
+    width: 100%;
     display: flex;
    align-items: center;
 }
@@ -43,7 +43,5 @@
     svg {
         width: 100px;
     }
-    .sponsor-conten{
-        width: 60%;
-    }
+   
 }
